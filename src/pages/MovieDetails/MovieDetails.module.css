@@ -1,0 +1,16 @@
+.movie_card {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.img {
+  display: block;
+  width: 250px;
+  height: auto;
+  z-index: 20000;
+}
+.genres {
+  display: flex;
+  gap: 12px;
+}

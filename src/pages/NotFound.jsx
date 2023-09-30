@@ -1,9 +1,9 @@
-
-
-export const NotFound = () => {
+import React from "react";
+const NotFound = () => {
     return (
         <div>
-            Sorry! Psge is not found!
+            Sorry! Page is not found!
         </div>
     )
-}
+};
+export default NotFound;
