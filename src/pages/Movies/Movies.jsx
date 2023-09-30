@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { getMoviesBySearch } from "API"
 import MoviesList from "components/MoviesList/MoviesList"
+import css from './Movies.module.css'
 
 const Movies = () => {
     const [searcedMovies, setSearcedMovies] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState(false)
     const [searchParams, setSearchParams] = useSearchParams()
     const query = searchParams.get("query") ?? ""
@@ -20,7 +20,6 @@ const Movies = () => {
             return
         }
         async function fetchMoviesBySearch() {
-            setIsLoading(true)
             setSearcedMovies([])
             setError(false)
             try {
@@ -30,22 +29,19 @@ const Movies = () => {
                     return;
                 }
                 setSearcedMovies(movies.results)
-            } catch (error) { setError(error.response.data); } finally {
-                setIsLoading(false)
-            }
+            } catch (error) { setError(error.response.data); }
         }
         fetchMoviesBySearch()
     }, [query])
 
     return (
-        <div>
-            <div>
+        <div className={css.container}>
+            <div className={css.form_thumb}>
                 <SearchForm onSubmit={hahdlesetSearchMovies} />
             </div>
             
             <div>
                 {error && <h1>{error}</h1>}
-                {isLoading && <h1>Loaging...</h1>}
                 <MoviesList movies={searcedMovies} />
             </div>
         </div>

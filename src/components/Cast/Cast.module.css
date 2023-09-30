@@ -1,3 +1,19 @@
+.container {
+  padding: 20px;
+  color: aliceblue;
+}
+.cast_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cast_card {
+  width: calc((100% - 40px) / 5);
+}
+.img_box {
+  border-radius: 4px;
+  overflow: hidden;
+}
 .img {
-  width: 160px;
+  width: 100%;
 }

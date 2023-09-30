@@ -1,0 +1,18 @@
+.container {
+  display: block;
+  padding: 20px;
+}
+.title {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 0;
+  font-size: 40px;
+}
+.list_item {
+  font-size: 18px;
+  line-height: 1.5;
+  transition: background-color 250ms linear;
+}
+.list_item:is(:hover, :focus) {
+  background-color: rgb(65, 63, 63);
+}

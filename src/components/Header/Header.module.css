@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #161616;
+  box-shadow: -1px 15px 46px -7px rgba(36, 8, 34, 0.75);
+  -webkit-box-shadow: -1px 15px 46px -7px rgba(36, 8, 34, 0.75);
+  -moz-box-shadow: -1px 15px 46px -7px rgba(36, 8, 34, 0.75);
+}
+.header_nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 40px;
+}
+.header_link {
+  font-size: 20px;
+  transition: color 250ms linear;
+}
+.header_link:is(:hover, :focus) {
+  color: crimson;
+}

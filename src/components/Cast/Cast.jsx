@@ -24,19 +24,20 @@ import css from "./Cast.module.css"
     }, [movieId])
 
     return (
-        <>
+        <div className={css.container}>
             {error && <h3>{error}</h3>}
-            {!credits.length ? <h3>We don't have any credits for this movie.</h3> : <ul>
-                {credits.map(({ profile_path, name, character }, index) => (<li key={index}>
-                    <div>
-                        <img className={css.img} src={
-                            profile_path ? `${refs.baseUrl}${profile_path}` : `${refs.defaultImg}`}
-                            alt={name}></img>
-                    </div>
-                    <h3>{name}</h3>
-                    <p>Character: {character}</p></li>))}
+            {!credits.length ? <h3>We don't have any credits for this movie.</h3> : <ul className={css.cast_list}>
+                {credits.map(({ profile_path, name, character }, index) => (<li className={css.cast_card} key={index}>
+                        <div className={css.img_box}>
+                           <img className={css.img} src={
+                               profile_path ? `${refs.baseUrl}${profile_path}` : `${refs.defaultImg}`}
+                               alt={name}></img>
+                       </div>
+                       <h4>{name}</h4>
+                       <p>Character: {character}</p>   
+                    </li>))}
             </ul>}
-        </>
+        </div>
           
     )
 };
