@@ -16,10 +16,9 @@ code {
 }
 a {
   text-decoration: none;
-  color: aliceblue;
 }
 a.active {
-  color: crimson;
+  color: #f0254e;
 }
 ul {
   list-style: none;

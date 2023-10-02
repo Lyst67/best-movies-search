@@ -1,0 +1,15 @@
+.list_item {
+  font-size: 18px;
+  line-height: 1.5;
+  transition: background-color 250ms linear;
+}
+.list_item:is(:hover, :focus) {
+  background-color: rgb(65, 63, 63);
+}
+.list_link {
+  color: aliceblue;
+  transition: color 250ms linear;
+}
+.list_item:is(:hover, :focus) .list_link {
+  color: #f0254e;
+}
