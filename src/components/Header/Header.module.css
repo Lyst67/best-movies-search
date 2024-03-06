@@ -23,3 +23,8 @@
 .header_link:first-child:hover ~ .header_link:last-child {
   color: aliceblue;
 }
+.title {
+  position: fixed;
+  left: 45%;
+  color: #f0254e;
+}
