@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbest_movies_search=self.webpackChunkbest_movies_search||[]).push([[805],{805:function(e,s,n){n.r(s);n(791);var r=n(184);s.default=function(){return(0,r.jsx)("div",{children:"Sorry! Page is not found!"})}}}]);
+//# sourceMappingURL=805.63f87f74.chunk.js.map
