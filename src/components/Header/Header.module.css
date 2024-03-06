@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 64px;
   background-color: #161616;
   box-shadow: 2px 11px 16px 0px rgba(72, 0, 0, 0.29);
   -webkit-box-shadow: 2px 11px 16px 0px rgba(72, 0, 0, 0.29);
