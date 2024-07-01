@@ -1,0 +1,22 @@
+.header_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.header_link {
+  font-size: 20px;
+  color: aliceblue;
+  transition: color 250ms linear;
+}
+.header_link:is(:hover, :focus) {
+  color: #f0254e;
+}
+.header_link:first-child:hover ~ .header_link:last-child {
+  color: aliceblue;
+}
+@media screen and (min-width: 768px) {
+  .header_nav {
+    flex-direction: row;
+    margin-left: 40px;
+  }
+}

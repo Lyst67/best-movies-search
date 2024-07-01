@@ -1,5 +1,8 @@
+.list {
+  padding-left: 20px;
+}
 .list_item {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   transition: background-color 250ms linear;
 }
@@ -7,9 +10,23 @@
   background-color: rgb(65, 63, 63);
 }
 .list_link {
+  display: block;
   color: aliceblue;
   transition: color 250ms linear;
 }
 .list_item:is(:hover, :focus) .list_link {
   color: #f0254e;
+}
+@media screen and (min-width: 480px) {
+  .list {
+    padding-left: 40px;
+  }
+  .list_item {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list_item {
+    font-size: 18px;
+  }
 }

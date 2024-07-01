@@ -1,4 +1,13 @@
 .container {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   color: aliceblue;
+}
+.content_text {
+  font-size: 14px;
+  line-height: 1.33;
+}
+@media screen and (min-width: 1024px) {
+  .content_text {
+    font-size: 16px;
+  }
 }
